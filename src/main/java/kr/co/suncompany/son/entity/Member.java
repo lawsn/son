@@ -15,9 +15,11 @@ public class Member {
     
     private String name;
     private String email;
+    private String address;
     
     public Member(String name, String email) {
         this.name = name;
         this.email = email;
+        this.address = address;
     }
 }
