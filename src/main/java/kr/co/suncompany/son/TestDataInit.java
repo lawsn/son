@@ -16,7 +16,7 @@ public class TestDataInit {
     @PostConstruct
     public void init() {
         Member member1 = new Member("홍길동", "hong@test.com");
-        Member member2 = new Member("김철수", "kim@test.com");
+        Member member2 = new Member("김철수2", "kim@test.com");
         
         memberService.join(member1);
         memberService.join(member2);
