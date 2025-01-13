@@ -2,6 +2,10 @@ spring:
   application:
     name: son
     
+  devtools:
+    restart:
+      enabled: true
+          
   # H2 데이터베이스 설정
   datasource:
     driver-class-name: org.h2.Driver
