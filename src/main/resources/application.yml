@@ -9,14 +9,14 @@ spring:
   # H2 데이터베이스 설정
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:file:./data/testdb;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1
     username: son
     password: son
     
   # JPA 설정
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true

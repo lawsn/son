@@ -15,20 +15,24 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Member {
+public class Customer {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
     @Column(nullable = false)
+    private String birthDt;
+    @Column(nullable = true)
+    private String phoneNo;
+    @Column(nullable = true)
     private String name;
     @Column(nullable = true)
-    private String email;
+    private String corpName;
     @Column(nullable = true)
-    private String address;
-    
+    private String regDt;
     @Column(nullable = true)
-    private Integer age;
-    
+    private String bizCertificate;
+    @Column(nullable = true)
+    private String agreeYn;
 }
